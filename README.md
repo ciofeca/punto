@@ -9,7 +9,7 @@ In-car monitoring/logging device with graphical output:
 * short- and medium-term fuel economy predictions (as reported by OBD-II)
 * inertial data (acceleration and gyro, 100 Hz sampling)
 
-![live example](./example.jpg)
+![live example](./esempio.jpg)
 
 ## Hardware
 
