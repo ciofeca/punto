@@ -1,0 +1,14 @@
+[package]
+name = "punto"
+version = "1.0.0"
+authors = ["Alfonso Martone <alfonso.martone@gmail.com>"]
+
+[dependencies]
+serial = "0.3"
+time = "0.1"
+libc = "0.2"
+rand = "0.3"
+
+[features]
+default = []
+obdecho = []
