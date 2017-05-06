@@ -45,3 +45,5 @@ Graphical library (virtual console and framebuffer) writes directly in mmap'ed d
 *How do you transfer/visualize data files?* Using *rsync* via wifi and a (not released) Ruby program to build *gnuplot* scripts.
 
 *OBD-II is slow.* Yes, especially if the car only supports ISO 14230-4 or SAE J1850 VPW, both running at about 10 kilobits/second: every single parameter query, except battery voltage, requires about 200-250 milliseconds; this is why I query a very few parameters (and some of them more often than others).
+
+![another example](./esempio.jpg)
