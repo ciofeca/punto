@@ -98,7 +98,8 @@ fn emit(buf: &[u8], tx: &mpsc::Sender<Info>) {
         if fld.starts_with("time\":\"") {          // timestamp field found?
             let tstr = &fld[7..31];                // "2016-02-19T00:16:14.000Z"
             let year = str::parse::<i32>(&tstr[0..4]).unwrap_or(0);
-            if year >= 2016 {
+
+            if year > 2016 {                       // only accept reasonable dates (sometimes uBlox GPS reports a weird year)
                 let month = str::parse::<i32>(&tstr[5..7]).unwrap_or(0);
                 let day   = str::parse::<i32>(&tstr[8..10]).unwrap_or(1);
                 let hour  = str::parse::<i32>(&tstr[11..13]).unwrap_or(0);
